@@ -1,0 +1,59 @@
+<?php
+
+class Product 
+{
+    private int $id;
+    private string $name;
+    private float $price;
+    private int $stock;
+
+    public function __construct(int $id, string $name, float $price, int $stock) 
+    {
+        $this-> id = $id;
+        $this-> name = $name;
+        $this-> price = $price;
+        $this-> stock = $stock;
+    }
+
+    private function getId(): int {
+        return $this->id;
+    }
+    
+    private function setId(int $id): int {
+        if($id < 0) {
+            return "id deve ser positivo";
+        }
+    }
+
+    private function getName(): string {
+        return $this->name;
+    }
+
+    private function setName(string $name): string {
+        if empty(($this->name)) {
+            return "nome não pode ser vazio";
+        }
+    }
+
+    private function getPrice(): float {
+        return $this->price;
+    }
+
+    private function setPrice(float $price): float {
+        if($this->price < 0) {
+            return "preço inválido";
+        }
+    }
+
+    private function getStock(): int {
+        return $this->stock;
+    }
+
+    private function setStock(int $stock): int {
+        if($this->stock < 0) {
+            return "Numero de estoque inválido";
+        }
+    }
+}
+
+   
