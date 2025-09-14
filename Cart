@@ -63,6 +63,7 @@ class Cart
         echo "Produto removido do carrinho.<br>";
     }
 
+  
     public function listItems()
     {
         if (empty($this->items)) {
