@@ -3,8 +3,8 @@
 Projeto simples em **PHP** que simula o funcionamento de um carrinho de
 compras.
 
-Guilherme Dalanora Dos Santos - RA: 1991839
-Igor Ryan De Mello Barbosa - RA: 2008543
+- Guilherme Dalanora Dos Santos - RA: 1991839
+- Igor Ryan De Mello Barbosa - RA: 2008543
 
 ------------------------------------------------------------------------
 
