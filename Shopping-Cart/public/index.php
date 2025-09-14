@@ -1,6 +1,6 @@
 <?php
-require_once __DIR__ . 'src/models/Product.php';
-require_once __DIR__ . 'src/models/Cart.php';
+require_once __DIR__ . '/../src/models/Product.php';
+require_once __DIR__ . '/../src/models/Cart.php';
 
 $product1 = new Product(1, 'Camiseta', 59.90, 10);
 $product2 = new Product(2, 'Calça Jeans', 129.90, 5);
