@@ -3,6 +3,9 @@
 Projeto simples em **PHP** que simula o funcionamento de um carrinho de
 compras.
 
+Guilherme Dalanora Dos Santos - RA: 1991839
+Igor Ryan De Mello Barbosa - RA: 2008543
+
 ------------------------------------------------------------------------
 
 ## Como rodar o projeto
@@ -10,14 +13,14 @@ compras.
 1.  Copie a pasta `carrinho` para dentro do diretório `htdocs` do
     **XAMPP**:
 
-    -   Windows → `C:\xampp\htdocs\carrinho`
-    -   Linux → `/opt/lampp/htdocs/carrinho`
+   - **Windows** → `C:\xampp\htdocs\Shopping-Cart`  
+   - **Linux** → `/opt/lampp/htdocs/Shopping-Cart`
 
 2.  Inicie o **Apache** pelo painel do XAMPP.
 
 3.  No navegador, acesse:
 
-        http://localhost/carrinho
+        http://localhost/Shopping-Cart/public/index.php
 
 ------------------------------------------------------------------------
 
