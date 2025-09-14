@@ -1,11 +1,11 @@
-# 🛒 Carrinho de Compras
+# Carrinho de Compras
 
 Projeto simples em **PHP** que simula o funcionamento de um carrinho de
 compras, seguindo boas práticas de programação (**PSR-12, KISS, DRY**).
 
 ------------------------------------------------------------------------
 
-## 🚀 Como rodar o projeto
+## Como rodar o projeto
 
 1.  Copie a pasta `carrinho` para dentro do diretório `htdocs` do
     **XAMPP**:
@@ -21,19 +21,19 @@ compras, seguindo boas práticas de programação (**PSR-12, KISS, DRY**).
 
 ------------------------------------------------------------------------
 
-## ✅ Funcionalidades implementadas
+## Funcionalidades implementadas
 
--   📌 Listar produtos com **id, nome, preço e estoque**\
--   ➕ **Adicionar item** ao carrinho (valida existência e estoque)\
--   ➖ **Remover item** do carrinho (estoque restaurado)\
--   📋 **Listar itens** do carrinho com quantidade, subtotal e total\
--   💰 **Calcular total** do carrinho\
--   🏷️ **Aplicar cupom de desconto**:
+- Listar produtos com **id, nome, preço e estoque**\
+- **Adicionar item** ao carrinho (valida existência e estoque)\
+- **Remover item** do carrinho (estoque restaurado)\
+- **Listar itens** do carrinho com quantidade, subtotal e total\
+- **Calcular total** do carrinho\
+- **Aplicar cupom de desconto**:
     -   `DESCONTO10` → aplica **10%** no valor total
 
 ------------------------------------------------------------------------
 
-## 🔎 Exemplos de uso (Casos de teste)
+## Exemplos de uso (Casos de teste)
 
 1.  **Adicionar produto válido**
     -   Entrada: produto `id=1`, quantidade `2`\
