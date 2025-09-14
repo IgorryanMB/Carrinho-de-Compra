@@ -1,59 +1,72 @@
 <?php
 
-class Product 
+class Product
 {
     private int $id;
     private string $name;
     private float $price;
     private int $stock;
 
-    public function __construct(int $id, string $name, float $price, int $stock) 
+    public function __construct(int $id, string $name, float $price, int $stock)
     {
-        $this-> id = $id;
-        $this-> name = $name;
-        $this-> price = $price;
-        $this-> stock = $stock;
+        $this->setId($id);
+        $this->setName($name);
+        $this->setPrice($price);
+        $this->setStock($stock);
     }
 
-    private function getId(): int {
+
+    public function getId(): int
+    {
         return $this->id;
     }
-    
-    private function setId(int $id): int {
-        if($id < 0) {
-            return "id deve ser positivo";
-        }
-    }
 
-    private function getName(): string {
+    public function getName(): string
+    {
         return $this->name;
     }
 
-    private function setName(string $name): string {
-        if empty(($this->name)) {
-            return "nome não pode ser vazio";
-        }
-    }
-
-    private function getPrice(): float {
+    public function getPrice(): float
+    {
         return $this->price;
     }
 
-    private function setPrice(float $price): float {
-        if($this->price < 0) {
-            return "preço inválido";
-        }
-    }
-
-    private function getStock(): int {
+    public function getStock(): int
+    {
         return $this->stock;
     }
 
-    private function setStock(int $stock): int {
-        if($this->stock < 0) {
-            return "Numero de estoque inválido";
+ 
+    public function setId(int $id): void
+    {
+        if ($id <= 0) {
+            throw new InvalidArgumentException('id deve ser positivo');
         }
+        $this->id = $id;
+    }
+
+    public function setName(string $name): void
+    {
+        $name = trim($name);
+        if ($name === '') {
+            throw new InvalidArgumentException('nome não pode ser vazio');
+        }
+        $this->name = $name;
+    }
+
+    public function setPrice(float $price): void
+    {
+        if ($price < 0) {
+            throw new InvalidArgumentException('preço inválido');
+        }
+        $this->price = $price;
+    }
+
+    public function setStock(int $stock): void
+    {
+        if ($stock < 0) {
+            throw new InvalidArgumentException('número de estoque inválido');
+        }
+        $this->stock = $stock;
     }
 }
-
-   
