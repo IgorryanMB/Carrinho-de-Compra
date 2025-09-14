@@ -1,7 +1,7 @@
 # Carrinho de Compras
 
 Projeto simples em **PHP** que simula o funcionamento de um carrinho de
-compras, seguindo boas práticas de programação (**PSR-12, KISS, DRY**).
+compras.
 
 ------------------------------------------------------------------------
 
