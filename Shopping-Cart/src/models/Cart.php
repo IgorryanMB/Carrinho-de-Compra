@@ -36,9 +36,9 @@ class Cart
             $this->items[$productId]['quantity'] += $quantity;
         } else {
             $this->items[$productId] = [
-                'ID-Produto' => $productId,
-                'Quantidade' => $quantity,
-                'Subtotal' => 0,
+                'product_id' => $productId,
+                'quantity' => $quantity,
+                'subtotal' => 0,
             ];
         }
 
