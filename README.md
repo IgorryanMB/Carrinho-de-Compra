@@ -10,7 +10,7 @@ compras.
 
 ## Como rodar o projeto
 
-1.  Copie a pasta `carrinho` para dentro do diretório `htdocs` do
+1.  Copie a pasta `Shopping-Cart` para dentro do diretório `htdocs` do
     **XAMPP**:
 
    - **Windows** → `C:\xampp\htdocs\Shopping-Cart`  
